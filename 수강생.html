@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="수강생1129.css">
+  </head>
+  <body>
+
+    <div class="outer-display">
+        <div class="main">
+            <header class="main__top-menu">
+                <span>
+                    <i class="fas fa-arrow-left fa-lg"></i>
+                </span>
+                <span>
+                    <i class="fas fa-search fa-lg"></i>
+                </span>
+            </header>
+
+            <div class="main__artist">
+                <div class="main__artist-img">
+                    <img src="https://is5-ssl.mzstatic.com/image/thumb/Features125/v4/0b/89/cc/0b89cca1-7b33-a3ae-99c0-df918d98390f/mzm.xitokrfl.jpg/800x800cc.jpg" >
+                </div>
+                <div class="main__artist-text">
+                    <h1>Kygo</h1>
+                    <p>Electronic, Dance</p>
+                </div>
+                <div class="main__artist-buttons">
+                    <span class="btn-shuffle">Shuffle</span>
+                    <span class="btn-like"><i class="fas fa-heart"></i> 212 971</span>
+                </div>
+            </div>
+
+            <div class="main__list">
+                <ul>
+                    <li class="main__list__song">
+                        <div class="main__list__song-thumbnail">
+                            <img src="https://i.scdn.co/image/ab67616d0000485180368f0aa8f90c51674f9dd2">
+                        </div>
+                        <div class="main__list__song-text">
+                            <p>Kygo, Whitney Houston</p>
+                            <h3>Higher Love</h3>
+                        </div>
+                        <div class="main__list__song-buttons">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </li>
+
+                    <li class="main__list__song main__list__song-active">
+                        <div class="main__list__song-thumbnail">
+                            <img src="https://i.scdn.co/image/ab67616d0000485135590cb9280d5a1f5221ae1a">
+                            <div class="active-play">
+                                <div class="animation-bar"></div>
+                                <div class="animation-bar"></div>
+                                <div class="animation-bar"></div>
+                            </div>
+                        </div>
+                        <div class="main__list__song-text">
+                            <p>Kygo, Conrad Sewell</p>
+                            <h3>Firestone</h3>
+                        </div>
+                        <div class="main__list__song-buttons">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </li>
+
+                    <li class="main__list__song">
+                        <div class="main__list__song-thumbnail">
+                            <img src="https://i.scdn.co/image/ab67616d00004851bbac34b85b879610138f2fb9">
+                        </div>
+                        <div class="main__list__song-text">
+                            <p>Kygo, James Gillespie</p>
+                            <h3>Gone Are The Days</h3>
+                        </div>
+                        <div class="main__list__song-buttons">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </li>
+
+                    <li class="main__list__song">
+                        <div class="main__list__song-thumbnail">
+                            <img src="https://i.scdn.co/image/ab67616d000048512c3fd06b0b185e346da9641f">
+                        </div>
+                        <div class="main__list__song-text">
+                            <p>Kygo, Marvin Gaye</p>
+                            <h3>Sexual Healing - Kygo Remix</h3>
+                        </div>
+                        <div class="main__list__song-buttons">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </li>
+
+                    <li class="main__list__song">
+                        <div class="main__list__song-thumbnail">
+                            <img src="https://i.scdn.co/image/ab67616d00004851f0b43fee481f279a186dff20">
+                        </div>
+                        <div class="main__list__song-text">
+                            <p>Kygo, Tina Turner</p>
+                            <h3>What's Love Got to Do with it</h3>
+                        </div>
+                        <div class="main__list__song-buttons">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </li>
+
+                    <li class="main__list__song">
+                        <div class="main__list__song-thumbnail">
+                            <img src="https://i.scdn.co/image/ab67616d00004851f9dcc529e62f2a4675f88738">
+                        </div>
+                        <div class="main__list__song-text">
+                            <p>Kygo, Selena Gomez</p>
+                            <h3>It Ain't Me</h3>
+                        </div>
+                        <div class="main__list__song-buttons">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="controller">
+                <div class="controller__text">
+                    <p>Kygo, Conrad Sewell</p>
+                    <h3>Firestone</h3>
+                </div>
+
+                <div class="controller__buttons">
+                    <div class="controller__buttons-back">
+                        <i class="fas fa-step-backward"></i>
+                    </div>
+                    <div class="controller__buttons-play">
+                        <i class="fas fa-pause fa-md"></i>
+                    </div>
+                    <div class="controller__buttons-next">
+                        <i class="fas fa-step-forward"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="outer-display">
+        <div class="main">
+            <header class="main__top-menu">
+                <span>
+                    <i class="fas fa-arrow-left fa-lg"></i>
+                </span>
+                <span>
+                    <i class="fas fa-ellipsis-v fa-lg"></i>
+                </span>
+            </header>
+
+            <div class="main__player">
+                <div class="main__player-cover">
+                    <img src="https://i.scdn.co/image/ab67616d0000b27335590cb9280d5a1f5221ae1a">
+                </div>
+                <div class="main__player-text">
+                    <h1>Firestone</h1>
+                    <p>Kygo, Conrad Sewell</p>
+                </div>
+                <div class="main__player-bar">
+                    <div class="main__player-bar-time">
+                        <span>1:45</span>
+                        <span>3:04</span>
+                    </div>
+                    <div class="main__player-bar-graph">
+                        <div class="total"></div>
+                        <div class="current"></div>
+                        <span class="circle"></span>
+                    </div>
+                </div>
+                <div class="main__player-controller">
+                    <span class="repeat">
+                        <i class="fas fa-retweet"></i>
+                    </span>
+                    <span class="backward">
+                        <i class="fas fa-step-backward fa-lg"></i>
+                    </span>
+                    <span class="play">
+                        <i class="fas fa-play-circle fa-4x"></i>
+                    </span>
+                    <span class="forward">
+                        <i class="fas fa-step-forward fa-lg"></i>
+                    </span>
+                    <span class="random">
+                        <i class="fas fa-random"></i>
+                    </span>
+                </div>
+            </div>      
+        </div>
+    </div>
+  </body>
+</html>
