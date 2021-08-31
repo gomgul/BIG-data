@@ -1,0 +1,8 @@
+body {
+    background-color: lightcoral;
+    font-size:large;
+}
+
+.hidden {
+    display : none;
+}
