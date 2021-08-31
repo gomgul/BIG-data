@@ -38,13 +38,13 @@ const com = parseInt("userNumber");
 
 if (use > com) {
   playForm.addEventListener("submit", playGame);
-  game.innerText = `You won!`;
+
 } else if (use < com) {
   playForm.addEventListener("submit", playGame);
-  game.innerText = `You lost!`;
+
 } else {
   playForm.addEventListener("submit", playGame);
-  game.innerText = `ReStart!`;
+  
 }
 
 
