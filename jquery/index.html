@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Website</title>
-    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/lightslider.css"/>
+    <!--제이쿼리 -->
+    <script src="./js/JQuery.js"></script>
+    <script src="./js/lightslider.js"></script>
+
     <link rel="shortcut icon" href="./images/fav-icon.png" />
     <script src="https://kit.fontawesome.com/844839bcbb.js" crossorigin="anonymous"></script>
 </head>
@@ -34,23 +39,23 @@
             </a>
             <!--메뉴-->   
             <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Men</a>
+                <li><a href="#">Harry Potter</a></li>
+                <li><a href="#">스타워즈</a>
                 <!--쎄일 라벨 -->
-                    <span class="sale-lable">Sale</span>
+                    <span class="sale-lable">마블</span>
                 </li>
-                <li><a href="#">Women</a></li>
-                <li><a href="#">Kids</a></li>
-                <li><a href="#">Shop</a></li>
+                <li><a href="#">인기제품</a></li>
+                <li><a href="#">신제품</a></li>
+                <li><a href="#">Vip</a></li>
             </ul>
             <!-- 오른쪽 메뉴-->
             <div class="right-menu">
                 <!--검색 -->
-                <a href="#" class="search">
+                <a href="javascript:void(0);" class="search">
                     <i class="fas fa-search"></i>
                 </a>
                 <!--유저 -->
-                <a href="#" class="user">
+                <a href="javascript:void(0);" class="user">
                     <i class="far fa-user"></i>
                 </a>
                 <!--카트  -->
@@ -71,7 +76,7 @@
             <!--인풋-->            
             <input type="text" placeholder="Search For Product"/>
             <!--취소 버튼-->
-            <a href="#" class="search-cancel">
+            <a href="javascript:void(0);" class="search-cancel">
                 <i class="fas fa-times"></i>
             </a>
         </div>        
@@ -81,7 +86,7 @@
         <!--로긴 ---------------->
         <div class="login-form">
             <!--취소 버튼-->    
-            <a href="#" class="form-cancel">
+            <a href="javascript:void(0);" class="form-cancel">
                 <i class="fas fa-times"></i>
             </a>    
 
@@ -89,22 +94,22 @@
             <strong>Log In</strong>
             <!--인풋-->
             <form action="">
-                <input type="email" placeholder="Example@hanmail.net" name="email">
-                <input type="password" placeholder="Password" name="password">
+                <input type="email" placeholder="Example@hanmail.net" name="email" required>
+                <input type="password" placeholder="Password" name="password" required>
                 <!--써밋 버튼-->
                 <input type="submit" value="Log In">
             </form>
             <!--아이디 까먹음 버튼-->
             <div class="form-btns">
             <a href="#" class="forget">Forget Your Password?</a>
-            <a href="#" class="sign-up-btn">Create Account</a>
+            <a href="javascript:void(0);" class="sign-up-btn">Create Account</a>
             </div>        
         </div>
 
         <!--가입 ---------------->
         <div class="sign-up-form">
             <!--취소 버튼-->    
-            <a href="#" class="form-cancel">
+            <a href="javascript:void(0);" class="form-cancel">
                 <i class="fas fa-times"></i>
             </a>    
 
@@ -112,15 +117,15 @@
             <strong>Sign Up</strong>
             <!--인풋-->
             <form action="">
-                <input type="text" placeholder="Full Name" name="fullname">
-                <input type="email" placeholder="Example@hanmail.net" name="email">
-                <input type="password" placeholder="Password" name="password">
+                <input type="text" placeholder="Full Name" name="fullname" required> 
+                <input type="email" placeholder="Example@hanmail.net" name="email" required>
+                <input type="password" placeholder="Password" name="password" required>
                 <!--써밋 버튼-->
                 <input type="submit" value="Sign up">
             </form>
             <!--아이디 까먹음 버튼-->
             <div class="form-btns">
-            <a href="#" class="forget">ALready Have Account?</a>
+            <a href="javascript:void(0);" class="already-acount">ALready Have Account?</a>
            
             </div>        
         </div>
@@ -128,12 +133,350 @@
 
 
     </div>
+<!--풀 슬라이더 ----------------------------------------------------------->
+<ul id="adaptive" class="cs-hidden">
+    <!--박스 1-->
+    <li class="item-a">
+        <!--박스-------------------------------->
+        <div class="full-slider-box f-slide-1">
+            <!--슬라이더 텍스트 컨테이너------>
+            <div class="slider-text-container ">
+                <div class="f-slider-text">
+                    <span>Limited offer</span>
+                    <strong>30% off <br/>with <font>promo code</font></strong>
+                    <a href="#" class="f-slider-btn">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </li>
+    <!--박스 2-->
+    <li class="item-a">
+        <!--박스-------------------------------->
+        <div class="full-slider-box f-slide-2">
+            <!--슬라이더 텍스트 컨테이너------>
+            <div class="slider-text-container ">
+                <div class="f-slider-text">
+                    <span>Limited offer</span>
+                    <strong>30% off <br/>with <font>promo code</font></strong>
+                    <a href="#" class="f-slider-btn">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </li>
+    <!--박스 3-->
+    <li class="item-a">
+        <!--박스-------------------------------->
+        <div class="full-slider-box f-slide-3">
+            <!--슬라이더 텍스트 컨테이너------>
+            <div class="slider-text-container ">
+                <div class="f-slider-text">
+                    <span>Limited offer</span>
+                    <strong>30% off <br/>with <font>promo code</font></strong>
+                    <a href="#" class="f-slider-btn">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </li>
+   
+  </ul>
+
+  <!-- 추천 카테고리 ------------------------------------------------------>
+  <div class="feature-heading">
+        <h2>Featured Categories</h2>
+  </div>
+
+  <ul id="autoWidth" class="cs-hidden">
+      <!--1----------------------------------------->
+      <li class="item">
+        <!--추천 상자-->
+        <div class="feature-box">
+            <a href="#">
+                <img src="./images/001.jpeg"/>
+            </a>
+        </div>
+    <!-- 텍스트 ------------>
+    <span>크리스마스 캘린더 60235</span>
+    </li>
+      <!--2----------------------------------------->
+      <li class="item">
+        <!--추천 상자-->
+        <div class="feature-box">
+            <a href="#">
+                <img src="./images/002.jpeg"/>
+            </a>
+        </div>
+    <!-- 텍스트 ------------>
+    <span>크리스마스 캘린더 60235</span>
+    </li>
+      <!--3----------------------------------------->
+      <li class="item">
+        <!--추천 상자-->
+        <div class="feature-box">
+            <a href="#">
+                <img src="./images/003.jpg"/>
+            </a>
+        </div>
+    <!-- 텍스트 ------------>
+    <span>크리스마스 캘린더 60235</span>
+    </li>
+      <!--4----------------------------------------->
+      <li class="item">
+        <!--추천 상자-->
+        <div class="feature-box">
+            <a href="#">
+                <img src="./images/004.jpeg"/>
+            </a>
+        </div>
+    <!-- 텍스트 ------------>
+    <span>크리스마스 캘린더 60235</span>
+    </li>
+      <!--5----------------------------------------->
+      <li class="item">
+        <!--추천 상자-->
+        <div class="feature-box">
+            <a href="#">
+                <img src="./images/005.jpeg"/>
+            </a>
+        </div>
+    <!-- 텍스트 ------------>
+    <span>크리스마스 캘린더 60235</span>
+    </li>
+      <!--6----------------------------------------->
+      <li class="item">
+        <!--추천 상자-->
+        <div class="feature-box">
+            <a href="#">
+                <img src="./images/006.jpeg"/>
+            </a>
+        </div>
+    <!-- 텍스트 ------------>
+    <span>크리스마스 캘린더 60235</span>
+    </li>
+      
+  </ul>
+
+<!--새 상품 ---------------------------------------------------->
+  <section class="new-arrival">
+        <!-- 헤더------------------->
+        <div class="arrival-heading">
+            <strong>feature items</strong>
+            <p>Christmas is Coming</p>
+        </div>
+
+        <!--상품 컨테이너 ------->
+        <div class="product-container">
+            <!--상품 상자 1--------->
+            <div class="product-box">
+                
+                <!--img-->
+                <div class="product-img">
+                    <!--카트에 더하기 -------------------------->
+                    <a href="#" class="add-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <img src="./images/p-1.jpg" />
+                </div>
+                <!--디테일--->
+                <div class="product-details">
+                    <a href="#" class="p-name">Avengers 76196</a> 
+                    <span class="p-price">$35</span>   
+                </div>    
+            </div>
+
+            <!--상품 상자 2--------->
+            <div class="product-box">
+                
+                <!--img-->
+                <div class="product-img">
+                    <!--카트에 더하기 --------->
+                    <a href="#" class="add-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <img src="./images/p-1.jpg" />
+                </div>
+                <!--디테일--->
+                <div class="product-details">
+                    <a href="#" class="p-name">Avengers 76196</a> 
+                    <span class="p-price">$35</span>   
+                </div>    
+            </div>
+
+            <!--상품 상자 3--------->
+            <div class="product-box">
+                
+                <!--img-->
+                <div class="product-img">
+                    <!--카트에 더하기 --------->
+                    <a href="#" class="add-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <img src="./images/p-1.jpg" />
+                </div>
+                <!--디테일--->
+                <div class="product-details">
+                    <a href="#" class="p-name">Avengers 76196</a> 
+                    <span class="p-price">$35</span>   
+                </div>    
+            </div>
+
+            <!--상품 상자 4--------->
+            <div class="product-box">
+                
+                <!--img-->
+                <div class="product-img">
+                    <!--카트에 더하기 --------->
+                    <a href="#" class="add-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <img src="./images/p-1.jpg" />
+                </div>
+                <!--디테일--->
+                <div class="product-details">
+                    <a href="#" class="p-name">Avengers 76196</a> 
+                    <span class="p-price">$35</span>   
+                </div>    
+            </div>
+
+            <!--상품 상자 5--------->
+            <div class="product-box">
+                
+                <!--img-->
+                <div class="product-img">
+                    <!--카트에 더하기 --------->
+                    <a href="#" class="add-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <img src="./images/p-1.jpg" />
+                </div>
+                <!--디테일--->
+                <div class="product-details">
+                    <a href="#" class="p-name">Avengers 76196</a> 
+                    <span class="p-price">$35</span>   
+                </div>    
+            </div>
+
+            <!--상품 상자 6--------->
+            <div class="product-box">
+                
+                <!--img-->
+                <div class="product-img">
+                    <!--카트에 더하기 --------->
+                    <a href="#" class="add-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <img src="./images/p-1.jpg" />
+                </div>
+                <!--디테일--->
+                <div class="product-details">
+                    <a href="#" class="p-name">Avengers 76196</a> 
+                    <span class="p-price">$35</span>   
+                </div>    
+            </div>
+
+            <!--상품 상자 7--------->
+            <div class="product-box">
+                
+                <!--img-->
+                <div class="product-img">
+                    <!--카트에 더하기 --------->
+                    <a href="#" class="add-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <img src="./images/p-1.jpg" />
+                </div>
+                <!--디테일--->
+                <div class="product-details">
+                    <a href="#" class="p-name">Avengers 76196</a> 
+                    <span class="p-price">$35</span>   
+                </div>    
+            </div>
+            <!--상품 상자 8--------->
+            <div class="product-box">
+                
+                <!--img-->
+                <div class="product-img">
+                    <!--카트에 더하기 --------->
+                    <a href="#" class="add-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <img src="./images/p-1.jpg" />
+                </div>
+                <!--디테일--->
+                <div class="product-details">
+                    <a href="#" class="p-name">Avengers 76196</a> 
+                    <span class="p-price">$35</span>   
+                </div>    
+            </div>
+        </div>
+  </section>
+
+  <!--배너 --------------------------------->
+  
+<!-- 쎄일 지웠다 ------------------------------------------------  -->
 
 
 
-    <!--제이쿼리 -->
-    <script src="./js/JQuery.js"></script>
-    <!--스크립트-->
+
+
+
+  <!--박스-------------------------------->
+  <div class="banner-box f-slide-3">
+    <!--슬라이더 텍스트 컨테이너------>
+    <div class="banner-text-container ">
+        <div class="banner-text">
+            <span>Limited offer</span>
+            <strong>30% off <br/>with <font>promo code</font></strong>
+            <a href="#" class="banner-btn">Shop Now</a>
+        </div>
+    </div>
+</div>
+
+<!--서비스 ------------------------------------------------------>
+
+    <section class="services">
+        <!--서비스 박스 1 ------------------------------------->
+        <div class="services-box">
+            <i class="fas fa-shipping-fast"></i>
+            <span>Free Shipping</span>
+            <p>Free Shipping For all KOREA orders</p>
+        </div>
+        <!--서비스 박스 2 ------------------------------------->
+        <div class="services-box">
+            <i class="fas fa-headphones-alt"></i>
+            <span>Support 24H</span>
+            <p>We support 24h</p>
+        </div>
+        <!--서비스 박스 3 ------------------------------------->
+        <div class="services-box">
+            <i class="fas fa-sync"></i>
+            <span>100% Money Back</span>
+            <p>Ypu have 30 days to Return</p>
+        </div>
+    </section>
+
+  <!-- footer ------------------------------------->
+    <footer>
+        <!-- copyright---------------------------->
+        <span class="copyright">
+            Copyright 2021
+        </span>
+        <!-- 구독 ----->
+        <div class="subscribe">
+            <form action="">
+                <input type="email" placeholder="Example@hanmail.net" required />
+                <input type="submit" value="subscribe">
+            </form>
+        </div>
+    </footer>
+
+
+    
+
+
+
+
+    
+    <!--스크립트------------------------------------------------------------->
     <script type="text/javascript">
 
         /* 검색 바 */
@@ -144,8 +487,8 @@
         $('.search-bar').removeClass('search-bar-active')
     });
     /* 로긴 가입 폼 ----------------------------------*/
-    $(document).on('click', '.user',function(){
-        $('.form').addClass('login-active')
+    $(document).on('click', '.user,.already-acount',function(){
+        $('.form').addClass('login-active').removeClass('sign-up-active')
     });
 
     $(document).on('click', '.sign-up-btn',function(){
@@ -153,8 +496,91 @@
     });
 
     $(document).on('click', '.form-cancel',function(){
-        $('.form').removeClass('login-active')
+        $('.form').removeClass('login-active').removeClass('sign-up-active')
     });
+
+    /* 풀 슬라이더 스크립트  -----------------------*/
+    $(document).ready(function() {
+        $('#adaptive').lightSlider({
+            adaptiveHeight:true,
+            item:1,
+            slideMargin:0,
+            loop:true
+        });
+    });
+
+    /* 추천 슬라이더 -----------------------------  */
+    $(document).ready(function() {
+        $('#autoWidth').lightSlider({
+            autoWidth:true,
+            loop:true,
+            onSliderLoad: function() {
+                $('#autoWidth').removeClass('cS-hidden');
+            } 
+        });  
+      });
+
+    /*  메뉴 스크롤 --------------------------------*/
+      $(window).scroll(function(){
+          if($(document).scrollTop() > 50){
+              $('.navigation').addClass('fix-nav');
+          }else{
+              $('.navigation').removeClass('fix-nav');
+          }
+      });
+
+    /* 카트에 저장하기 -------------------------------*/  
+    $(document).ready(function(){
+        $('.add-cart').click(function(){
+            var product_id = $(this).data("productid");
+            var product_name = $(this).data("productname");
+            var product_price = $(this).data("price");
+            var quantity = $('#' + product_id).val();
+            if(quantity != '' && quantity > 0)
+            {
+                $.ajax({
+                    url:"",
+                    method: "POST",
+                    data:{
+                        product_id:product_id,
+                        product_name:product_name,
+                        product_price:product_price,
+                        quantity:quantity
+                    },
+                    success:function(data){
+                        alert("Product Added into Cart");
+                        $('#cart_details').html(data);
+                        $('#' + product_id).val();
+                    }    
+                });
+            }
+            else{
+                alert("Please Enter quantity");
+                
+            }
+        })
+        $('#cart_details').load("");
+        $(document).on('click', 'remove_inventory', function(){
+            var row_id = $(this).attr("id");  
+            if(confirm("Are you sure you want to remove this?"))
+            {
+                $.ajax({
+                    url:"",
+                    method:"POST",
+                    data:{row_id:row_id},
+                    success:function (data)
+                    {
+                        alert("Product removed from Cart");
+                        $('#cart_details').html(data);
+                    }
+                })                       
+            }  else
+            {
+                return false;
+            }
+        });
+    });
+
 
     </script>
 </body>
